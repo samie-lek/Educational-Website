@@ -1,0 +1,129 @@
+.instagram {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    clear: both;
+}
+
+.brief>* {
+    width: 50%;
+    margin: 20px;
+}
+
+.brief>* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer>p {
+    color: white;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px
+}
+
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc
+}
+
+@media (max-width: 1000px) {
+    .brief>* {
+        width: 100%;
+    }
+}
+
+.ws-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.ws-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.ws-table-all tr:nth-child(even) {
+    background-color: #E7E9EB
+}
+
+.ws-table-all td,
+.ws-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.ws-table-all {
+    width: 75%;
+}
+
+.ws-table-all th:first-child,
+.ws-table-all td:first-child {
+    padding-left: 16px
+}
+
+.functions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+    .ws-table-all {
+        width: 100%;
+    }
+
+    .example>p {
+        text-align: left;
+    }
+
+    .example>* {
+        margin-left: 10px;
+    }
+
+    .body {
+        margin-bottom: 25px;
+    }
+}
+
+.example {
+    align-self: flex-start;
+    margin-left: 10%;
+    background-color: #728c69;
+    border-radius: 25px;
+    width: 80%;
+}
+
+.example>p {
+    text-align: left;
+}
+
+.example>* {
+    margin-left: 10px;
+}
+
+.example-image>img {
+    width: 80%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+body {
+    background-color: #99edc3;
+}

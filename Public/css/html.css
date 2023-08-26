@@ -1,0 +1,194 @@
+.instagram {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+.footer>p {
+    color: white;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.brief {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.what-html {
+    text-align: center;
+}
+
+.brief > * {
+    width: 50%;
+    margin: 20px;
+}
+
+.nested-element .example-explained {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all-element > * {
+    text-align: center;
+}
+
+.brief > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.what-html {
+    width: 40%;
+}
+
+.what-html li {
+    text-align: left;
+}
+
+@media (max-width: 1000px) {
+    .brief > * {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .what-html {
+        width: 70%;
+    }
+
+    .nested-element {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+.body {
+    width: 100%;
+    margin: 0px;
+}
+
+span {
+    color: red;
+    background-color: whitesmoke;
+    font-family: "Times New", serif;
+}
+
+.red-text {
+    color: red;
+    background-color: whitesmoke;
+    font-family: "Times New", serif;
+}
+
+
+.document>h2,
+p {
+    text-align: center;
+}
+
+.example {
+    align-self: flex-start;
+    margin-left: 10%;
+    background-color: lightgray;
+    border-radius: 25px;
+    width: 80%;
+}
+
+.example>p {
+    text-align: left;
+}
+
+.example>* {
+    margin-left: 10px;
+}
+
+.example-image>img {
+    width: 80%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+
+    p {
+        font-size: 14px;
+    }
+
+    .element {
+        width: 100%;
+    }
+
+    .example>p {
+        text-align: left;
+    }
+
+    .example>* {
+        margin-left: 10px;
+    }
+
+    .body {
+        margin-bottom: 25px;
+    }
+}
+
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc
+}
+
+.ws-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.ws-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.ws-table-all tr:nth-child(even) {
+    background-color: #E7E9EB
+}
+
+.ws-table-all td,
+.ws-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.ws-table-all {
+    width: 75%;
+}
+
+.ws-table-all th:first-child,
+.ws-table-all td:first-child {
+    padding-left: 16px
+}
+
+@media (max-width: 1000px) {
+    .ws-table-all {
+        width: 100% !important;
+    }
+}

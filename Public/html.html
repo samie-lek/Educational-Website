@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/html.css">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <title>HTML</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Public/python.html">Python</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Website
+                                Languages</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <fa class="dropdown-item" href="../Public/web_language.html">Website Languages</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../Public/html.html">HTML</a></li>
+                                <li><a class="dropdown-item" href="../Public/css.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="../Public/javascript.html">Javascript</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="body">
+        <div class="brief">
+            <div class="what-html">
+                <h2>What is HTML?</h2>
+                <ul>
+                    <li class="one">HTML stands for Hyper Text Markup Language</li>
+                    <li class="two">HTML is the standard markup language for creating Web pages</li>
+                    <li class="three">HTML describes the structure of a Web page</li>
+                    <li class="four">HTML consists of a series of elements</li>
+                    <li class="five">HTML elements tell the browser how to display the content</li>
+                    <li class="six">HTML elements label pieces of content such as "this is a heading", "this is a
+                        paragraph", "this
+                        is a link", etc.</li>
+                </ul>
+            </div>
+            <div class="document">
+                <h2>A Simple HTML document</h2>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="example-image">
+                        <img src="../Images/html-statement.png">
+                    </div>
+                </div>
+                <div class="example-explained">
+                    <h3 style="text-align: center;">Example Explained</h3>
+                    <ul>
+                        <li>The <code class="red-text">&lt;!DOCTYPE html&gt;</code> declaration defines
+                            that this document is an HTML5 document</li>
+                        <li>The <code class="red-text">&lt;html&gt;</code> element is the root element of an HTML
+                            page</li>
+                        <li>The <code class="red-text">&lt;head&gt;</code> element contains meta information about the
+                            HTML page</li>
+                        <li>The <code class="red-text">&lt;title&gt;</code> element specifies a title for the
+                            HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+                        <li>The <code class="red-text">&lt;body&gt;</code> element defines the
+                            document's body, and is a container for all the visible contents, such as
+                            headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+                        <li>The <code class="red-text">&lt;h1&gt;</code> element defines a large heading</li>
+                        <li>The <code class="red-text">&lt;p&gt;</code> element defines a paragraph</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="element">
+                <h2>What is an HTML Element?</h2>
+                <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+                <div style="font-size:20px;padding:10px;margin-bottom:10px;">
+                    <span>
+                        <span>&lt;</span>tagname<span>&gt;</span></span>
+                    Content goes here...
+                    <span>
+                        <span>&lt;</span>/tagname<span>&gt;</span></span>
+
+                </div>
+                <p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+
+                <div style="font-size:20px;padding:10px;margin-bottom:10px;">
+                    <span><span>&lt;<span>h1</span>&gt;</span></span>My
+                    First Heading<span><span>&lt;</span>/h1<span>&gt;</span></span>
+                </div>
+
+                <div style="font-size:20px;padding:10px;margin-bottom:10px;">
+                    <span><span>&lt;</span>p<span>&gt;</span></span>My first
+                    paragraph.<span><span>&lt;</span>/p<span>&gt;</span></span>
+                </div>
+
+                <table class="ws-table-all notranslate">
+                    <tr>
+                        <th>Start tag</th>
+                        <th>Element content</th>
+                        <th>End tag</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>My First Heading</td>
+                        <td>&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>My first paragraph.</td>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td><em>none</em></td>
+                        <td><em>none</em></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="nested-element">
+                <h2>Nested HTML Elements</h2>
+                <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+                <p>All HTML documents consist of nested HTML elements.</p>
+                <p>The following example contains four HTML elements (<code class="red-text">&lt;html&gt;</code>, <code
+                        class="red-text">&lt;body&gt;</code>, <code class="red-text">&lt;h1&gt;</code>
+                    and <code class="red-text">&lt;p&gt;</code>):</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="example-image">
+                        <img src="../Images/nested-element.png">
+                    </div>
+                </div>
+                <div class="example-explained">
+                    <h3>Example Explained</h3>
+                    <p>The <code class="red-text">&lt;body&gt;</code> element defines the
+                        document's body.</p>
+                    <p>It has a start tag <code class="red-text">&lt;body&gt;</code> and an end tag <code
+                            class="red-text">&lt;/body&gt;</code>.</p>
+                    <p>Then, inside the <code class="red-text">&lt;body&gt;</code> element there
+                        are two other elements:
+                        <code class="red-text">&lt;h1&gt;</code> and <code class="red-text">
+                        &lt;p&gt;</code>:
+                    </p>
+                </div>
+                <div class="example">
+                    <div class="example-image">
+                        <img src="../Images/body-element.png" style="margin-top: 20px;">
+                    </div>
+                </div>
+                <div class="example-explained" style="margin-top: 10px;">
+                    <p>The <code class="red-text">&lt;body&gt;</code> element defines the
+                        document's body.</p>
+                    <p>It has a start tag <code class="red-text">&lt;body&gt;</code> and an end tag <code
+                            class="red-text">&lt;/body&gt;</code>.</p>
+                    <p>Then, inside the <code class="red-text">&lt;body&gt;</code> element there
+                        are two other elements:
+                        <code class="red-text">&lt;h1&gt;</code> and <code class="red-text">
+                        &lt;p&gt;</code>:
+                    </p>
+                </div>
+                <div class="example">
+                    <div class="example-image">
+                        <img src="../Images/h1-p-example.png" style="margin-top: 20px;">
+                    </div>
+                </div>
+                <div class="example-explained" style="margin-top: 10px;">
+                    <p>The <code class="red-text">&lt;h1&gt;</code> element defines a heading.</p>
+                    <p>It has a start tag <code class="red-text">&lt;h1&gt;</code> and an end tag <code
+                            class="red-text">&lt;/h1&gt;</code>:</p>
+                </div>
+                <div class="example">
+                    <div class="example-image">
+                        <img src="../Images/h1-example.png" style="margin-top: 20px;">
+                    </div>
+                </div>
+                <div class="example-explained" style="margin-top: 10px;">
+                    <p>The <code class="red-text">&lt;p&gt;</code> element defines a paragraph.</p>
+                    <p>It has a start tag <code class="red-text">&lt;p&gt;</code> and an end tag <code
+                            class="red-text">&lt;/p&gt;</code>:</p>
+                </div>
+                <div class="example">
+                    <div class="example-image">
+                        <img src="../Images/p-example.png" style="margin-top: 20px;">
+                    </div>
+                </div>
+            </div>
+            <div class="never-skip">
+                <h2>Never Skip the End Tag</h2>
+                <p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="example-image">
+                        <img src="../Images/end-tag-example.png">
+                    </div>
+                </div>
+                <div class="example-explained">
+                    <p><strong>However, never rely on this! Unexpected results and errors may occur if you forget the
+                            end
+                            tag!</strong></p>
+                </div>
+
+            </div>
+            <div class="empty-element">
+                <h2>Empty HTML Element</h2>
+                <p>HTML elements with no content are called empty elements.</p>
+                <p>The <code class="red-text">&lt;br&gt;</code> or <code class="red-text">&lt;br /&gt;</code> tag
+                    defines a line break, and
+                    is an empty element without a closing tag:</p>
+                <div class="example">
+                    <h3>Example</h3>
+                    <div class="example-image">
+                        <img src="../Images/void-example.png">
+                    </div>
+                </div>
+            </div>
+            <div class="case-sensitivity">
+                <h2>HTML is Not Case Sensitive</h2>
+                <p>HTML tags are not case sensitive: <code class="red-text">&lt;P&gt;</code> means the same as <code
+                        class="red-text">&lt;p&gt;</code>.</p>
+                <p>The HTML standard does not require lowercase tags, but W3C
+                    <b>recommends</b> lowercase in HTML, and <b>demands</b> lowercase for stricter document types like
+                    XHTML.
+                </p>
+            </div>
+        </div>
+
+        <div class="all-element">
+            <h2>HTML Tags Ordered Alphabetically</h2>
+            <table class="ws-table-all notranslate">
+                <tr>
+                    <th style="width:25%">Tag</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;!--...--&gt;</td>
+                    <td>Defines a comment</td>
+                </tr>
+                <tr>
+                    <td>&lt;!DOCTYPE&gt;&nbsp;</td>
+                    <td>Defines the document type</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Defines a hyperlink</td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Defines an abbreviation or an acronym</td>
+                </tr>
+                <tr>
+                    <td>&lt;acronym&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5. Use <a href="tag_abbr.asp">&lt;abbr&gt;</a>
+                            instead.<br></span>Defines an acronym</td>
+                </tr>
+                <tr>
+                    <td>&lt;address&gt;</td>
+                    <td>Defines contact information for the author/owner of a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;applet&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5. Use <a href="tag_embed.asp">&lt;embed&gt;</a>
+                            or <a href="tag_object.asp">&lt;object&gt;</a> instead.<br></span>Defines an embedded applet
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;area&gt;</td>
+                    <td>Defines an area inside an image map</td>
+                </tr>
+                <tr>
+                    <td class="html5badge">&lt;article&gt;</td>
+                    <td>Defines an article</td>
+                </tr>
+                <tr>
+                    <td class="html5badge">&lt;aside&gt;</td>
+                    <td>Defines content aside from the page content</td>
+                </tr>
+                <tr>
+                    <td class="html5badge">&lt;audio&gt;</td>
+                    <td>Defines embedded sound content</td>
+                </tr>
+                <tr>
+                    <td>&lt;b&gt;</td>
+                    <td>Defines bold text</td>
+                </tr>
+                <tr>
+                    <td>&lt;base&gt;</td>
+                    <td>Specifies the base URL/target for all relative URLs in a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;basefont&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Specifies a default
+                        color, size, and font for all text in a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;bdi&gt;</td>
+                    <td>Isolates a part of text that might be formatted in a different direction
+                        from other text outside it</td>
+                </tr>
+                <tr>
+                    <td>&lt;bdo&gt;</td>
+                    <td>Overrides the current text direction</td>
+                </tr>
+                <tr>
+                    <td>&lt;big&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines big text
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Defines a section that is quoted from another source</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Defines the document's body</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Defines a single line break</td>
+                </tr>
+                <tr>
+                    <td>&lt;button&gt;</td>
+                    <td>Defines a clickable button</td>
+                </tr>
+                <tr>
+                    <td>&lt;canvas&gt;</td>
+                    <td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Defines a table caption</td>
+                </tr>
+                <tr>
+                    <td>&lt;center&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines centered
+                        text</td>
+                </tr>
+                <tr>
+                    <td>&lt;cite&gt;</td>
+                    <td>Defines the title of a work</td>
+                </tr>
+                <tr>
+                    <td>&lt;code&gt;</td>
+                    <td>Defines a piece of computer code</td>
+                </tr>
+                <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Specifies column properties for each column within a &lt;colgroup&gt; element&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Specifies a group of one or more columns in a table for formatting</td>
+                </tr>
+                <tr>
+                    <td>&lt;data&gt;</td>
+                    <td>Adds a machine-readable
+                        translation of a given content</td>
+                </tr>
+                <tr>
+                    <td>&lt;datalist&gt;</td>
+                    <td>Specifies a list of pre-defined options for input controls</td>
+                </tr>
+                <tr>
+                    <td>&lt;dd&gt;</td>
+                    <td>Defines a description/value of a term in a description list</td>
+                </tr>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Defines text that has been deleted from a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;details&gt;</td>
+                    <td>Defines additional details that the user can view or hide</td>
+                </tr>
+                <tr>
+                    <td>&lt;dfn&gt;</td>
+                    <td>Specifies a term that is going to be defined within the content</td>
+                </tr>
+                <tr>
+                    <td>&lt;dialog&gt;</td>
+                    <td>Defines a dialog box or window</td>
+                </tr>
+                <tr>
+                    <td>&lt;dir&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5. Use <a href="tag_ul.asp">&lt;ul&gt;</a>
+                            instead.<br></span>Defines a directory list</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Defines a section in a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;dl&gt;</td>
+                    <td>Defines a description list</td>
+                </tr>
+                <tr>
+                    <td>&lt;dt&gt;</td>
+                    <td>Defines a term/name in a description list</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Defines emphasized text&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&lt;embed&gt;</td>
+                    <td>Defines a container for an external application</td>
+                </tr>
+                <tr>
+                    <td>&lt;fieldset&gt;</td>
+                    <td>Groups related elements in a form</td>
+                </tr>
+                <tr>
+                    <td class="html5badge">&lt;figcaption&gt;</td>
+                    <td>Defines a caption for a &lt;figure&gt; element</td>
+                </tr>
+                <tr>
+                    <td class="html5badge">&lt;figure&gt;</td>
+                    <td>Specifies self-contained content</td>
+                </tr>
+                <tr>
+                    <td>&lt;font&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines font, color,
+                        and size for text</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Defines a footer for a document or section</td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>Defines an HTML form for user input</td>
+                </tr>
+                <tr>
+                    <td>&lt;frame&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5.<br></span>Defines a window (a frame) in a
+                        frameset</td>
+                </tr>
+                <tr>
+                    <td>&lt;frameset&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5.<br></span>Defines a set of frames</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt; to &lt;h6&gt;</td>
+                    <td> Defines HTML headings</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Contains metadata/information for the document</td>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Defines a header for a document or section</td>
+                </tr>
+                <tr>
+                    <td>&lt;hr&gt;</td>
+                    <td> Defines a thematic change in the content</td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Defines the root of an HTML document</td>
+                </tr>
+                <tr>
+                    <td>&lt;i&gt;</td>
+                    <td>Defines a part of text in an alternate voice or mood</td>
+                </tr>
+                <tr>
+                    <td>&lt;iframe&gt;</td>
+                    <td>Defines an inline frame</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Defines an image</td>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>Defines an input control</td>
+                </tr>
+                <tr>
+                    <td>&lt;ins&gt;</td>
+                    <td>Defines a text that has been inserted into a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;kbd&gt;</td>
+                    <td>Defines keyboard input</td>
+                </tr>
+                <tr>
+                    <td>&lt;label&gt;</td>
+                    <td>Defines a label&nbsp;for an &lt;input&gt; element</td>
+                </tr>
+                <tr>
+                    <td>&lt;legend&gt;</td>
+                    <td>Defines a caption for a &lt;fieldset&gt; element</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>Defines a list item</td>
+                </tr>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Defines the relationship between a document and an external resource (most
+                        used to link to style sheets)</td>
+                </tr>
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>Specifies the main content of a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;map&gt;</td>
+                    <td>Defines an image map</td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Defines marked/highlighted text</td>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>Defines metadata about an HTML document</td>
+                </tr>
+                <tr>
+                    <td>&lt;meter&gt;</td>
+                    <td>Defines a scalar measurement within a known range (a gauge)</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Defines navigation links</td>
+                </tr>
+                <tr>
+                    <td>&lt;noframes&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5.<br></span>Defines an alternate content for
+                        users that do not support frames</td>
+                </tr>
+                <tr>
+                    <td>&lt;noscript&gt;</td>
+                    <td>Defines an alternate content for users that do not support
+                        client-side scripts</td>
+                </tr>
+                <tr>
+                    <td>&lt;object&gt;</td>
+                    <td>Defines a container for an external application</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Defines an ordered list</td>
+                </tr>
+                <tr>
+                    <td>&lt;optgroup&gt;</td>
+                    <td>Defines a group of related options in a drop-down list</td>
+                </tr>
+                <tr>
+                    <td>&lt;option&gt;</td>
+                    <td>Defines an option in a drop-down list</td>
+                </tr>
+                <tr>
+                    <td>&lt;output&gt;</td>
+                    <td>Defines the result of a calculation</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Defines a paragraph</td>
+                </tr>
+                <tr>
+                    <td>&lt;param&gt;</td>
+                    <td>Defines a parameter for an object</td>
+                </tr>
+                <tr>
+                    <td>&lt;picture&gt;</td>
+                    <td>Defines a container for multiple image resources</td>
+                </tr>
+                <tr>
+                    <td>&lt;pre&gt;</td>
+                    <td>Defines preformatted text</td>
+                </tr>
+                <tr>
+                    <td>&lt;progress&gt;</td>
+                    <td>Represents the progress of a task</td>
+                </tr>
+                <tr>
+                    <td>&lt;q&gt;</td>
+                    <td>Defines a short quotation</td>
+                </tr>
+                <tr>
+                    <td>&lt;rp&gt;</td>
+                    <td>Defines what to show in browsers that do not support ruby annotations</td>
+                </tr>
+                <tr>
+                    <td>&lt;rt&gt;</td>
+                    <td>Defines an explanation/pronunciation of characters (for East Asian
+                        typography)</td>
+                </tr>
+                <tr>
+                    <td>&lt;ruby&gt;</td>
+                    <td>Defines a ruby annotation (for East Asian typography)</td>
+                </tr>
+                <tr>
+                    <td>&lt;s&gt;</td>
+                    <td>Defines text that is no longer correct</td>
+                </tr>
+                <tr>
+                    <td>&lt;samp&gt;</td>
+                    <td>Defines sample output from a computer program</td>
+                </tr>
+                <tr>
+                    <td>&lt;script&gt;</td>
+                    <td>Defines a client-side script</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Defines a section in a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;select&gt;</td>
+                    <td>Defines a drop-down list</td>
+                </tr>
+                <tr>
+                    <td>&lt;small&gt;</td>
+                    <td>Defines smaller text</td>
+                </tr>
+                <tr>
+                    <td>&lt;source&gt;</td>
+                    <td>Defines multiple media resources for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>Defines a section in a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;strike&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5. Use <a href="tag_del.asp">&lt;del&gt;</a> or <a
+                                href="tag_s.asp">&lt;s&gt;</a> instead.<br></span>Defines strikethrough text</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Defines important text</td>
+                </tr>
+                <tr>
+                    <td>&lt;style&gt;</td>
+                    <td>Defines style information for a document</td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>Defines subscripted text</td>
+                </tr>
+                <tr>
+                    <td>&lt;summary&gt;</td>
+                    <td>Defines a visible heading for a &lt;details&gt; element</td>
+                </tr>
+                <tr>
+                    <td>&lt;sup&gt;</td>
+                    <td>Defines superscripted text</td>
+                </tr>
+                <tr>
+                    <td>&lt;svg&gt;</td>
+                    <td>Defines a container for SVG graphics</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Defines a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Groups the body content in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Defines a cell in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;template&gt;</td>
+                    <td>Defines a container for content that should be hidden when the page loads</td>
+                </tr>
+                <tr>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Defines a multiline input control (text area)</td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Groups the footer content in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Defines a header cell in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Groups the header content in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;time&gt;</td>
+                    <td>Defines a specific time (or datetime)</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Defines a title for the document</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Defines a row in a table</td>
+                </tr>
+                <tr>
+                    <td>&lt;track&gt;</td>
+                    <td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+                </tr>
+                <tr>
+                    <td>&lt;tt&gt;</td>
+                    <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines teletype
+                        text</td>
+                </tr>
+                <tr>
+                    <td>&lt;u&gt;</td>
+                    <td>Defines some text that is unarticulated and styled differently from normal
+                        text</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Defines an unordered list</td>
+                </tr>
+                <tr>
+                    <td>&lt;var&gt;</td>
+                    <td>Defines a variable</td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Defines embedded video content</td>
+                </tr>
+                <tr>
+                    <td>&lt;wbr&gt;</td>
+                    <td>Defines a possible line-break</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="footer bg-dark p-4 mt-3">
+        <a href="https://www.instagram.com/samie_lek/"><img src="../Images/footer/instagram.png" alt="instagram"
+                class="instagram"></a>
+        <p>This website is for educational purposes</p>
+        <p>This webpage is a reference to the w3school website about HTML.</p>
+        <p>Click this <a href="https://www.w3schools.com/html/default.asp">link</a> to go see the full document.</p>
+    </div>
+</body>
+
+</html>
